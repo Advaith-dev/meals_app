@@ -20,8 +20,10 @@ class _TabsScreenState extends State<TabsScreen> {
 
     setState(() {
       if (isMealFav) {
+        meal.isFav = false;
         _favoriteMeals.remove(meal);
       } else {
+        meal.isFav = true;
         _favoriteMeals.add(meal);
       }
     });

@@ -3,10 +3,11 @@ enum Complexity { simple, challenging, hard }
 enum Affordability { affordable, pricey, luxurious }
 
 class Meal {
-  const Meal({
+  Meal({
     required this.id,
     required this.categories,
     required this.title,
+    required this.isFav,
     required this.imageUrl,
     required this.ingredients,
     required this.steps,
@@ -22,6 +23,7 @@ class Meal {
   final String id;
   final List<String> categories;
   final String title;
+  bool isFav;
   final String imageUrl;
   final List<String> ingredients;
   final List<String> steps;
@@ -32,4 +34,8 @@ class Meal {
   final bool isLactoseFree;
   final bool isVegan;
   final bool isVegetarian;
+
+  set setFav(bool val) {
+    isFav = val;
+  }
 }

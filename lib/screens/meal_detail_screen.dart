@@ -21,7 +21,7 @@ class MealDetailScreen extends StatelessWidget {
             onPressed: () {
               addFavMeal(meal);
             },
-            icon: Icon(Icons.star),
+            icon: (meal.isFav ? Icon(Icons.star) : Icon(Icons.star_outline)),
           ),
         ],
       ),

@@ -17,11 +17,12 @@ const availableCategories = [
   Category(id: 'c10', title: 'Summer', color: Colors.teal),
 ];
 
-const dummyMeals = [
+List<Meal> dummyMeals = [
   Meal(
     id: 'm1',
     categories: ['c1', 'c2'],
     title: 'Spaghetti with Tomato Sauce',
+    isFav: false,
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
@@ -53,6 +54,7 @@ const dummyMeals = [
     id: 'm2',
     categories: ['c2'],
     title: 'Toast Hawaii',
+    isFav: false,
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
@@ -79,6 +81,7 @@ const dummyMeals = [
     id: 'm3',
     categories: ['c2', 'c3'],
     title: 'Classic Hamburger',
+    isFav: false,
     affordability: Affordability.pricey,
     complexity: Complexity.simple,
     imageUrl:
@@ -108,6 +111,7 @@ const dummyMeals = [
     id: 'm4',
     categories: ['c4'],
     title: 'Wiener Schnitzel',
+    isFav: false,
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
     imageUrl:
@@ -145,6 +149,7 @@ const dummyMeals = [
       'c10',
     ],
     title: 'Salad with Smoked Salmon',
+    isFav: false,
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
@@ -177,6 +182,7 @@ const dummyMeals = [
     id: 'm6',
     categories: ['c6', 'c10'],
     title: 'Delicious Orange Mousse',
+    isFav: false,
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
@@ -210,6 +216,7 @@ const dummyMeals = [
     id: 'm7',
     categories: ['c7'],
     title: 'Pancakes',
+    isFav: false,
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
@@ -239,6 +246,7 @@ const dummyMeals = [
     id: 'm8',
     categories: ['c8'],
     title: 'Creamy Indian Chicken Curry',
+    isFav: false,
     affordability: Affordability.pricey,
     complexity: Complexity.challenging,
     imageUrl:
@@ -270,6 +278,7 @@ const dummyMeals = [
     id: 'm9',
     categories: ['c9'],
     title: 'Chocolate Souffle',
+    isFav: false,
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
@@ -316,6 +325,7 @@ const dummyMeals = [
   Meal(
     id: 'm10',
     categories: ['c2', 'c5', 'c10'],
+    isFav: false,
     title: 'Asparagus Salad with Cherry Tomatoes',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
